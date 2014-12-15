@@ -6,6 +6,8 @@
 
 # Function makeCacheMatrix is an object container that stores the matrix data and
 # contains setters and getters.
+# Parameters:
+#   x: matrix of values to be stored
 
 makeCacheMatrix <- function(x = matrix()) {
   # Initialize an empty inverse.
@@ -42,6 +44,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 # Function cacheSolve contains the functions to store, calculate, and retrieve the inverse
 # of the matrix, and its cached result.
+# Parameters:
+#   x: pointer of instance of function makeCacheMatrix()
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
